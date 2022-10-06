@@ -8,13 +8,14 @@ import {
       label: { type: String },
     };
     render() {
+
       return html`<div>${this.label}: ${this.count}</div>`;
     }
   }
 
 // class JozuaCustom extends HTMLElement {
 //   inner = this.attachShadow({ mode: "closed" });
-
+  
 //   count = 0;
 
 //   connectedCallback() {
