@@ -2,16 +2,28 @@ import {
     LitElement,
     html,
   } from “https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js”;
-  class JozuaCustom extends LitElement {
-    static properties = {
-      count: { type: Number, state: true },
-      label: { type: String },
+  class Component extends LitElement {
+    
+
     };
     render() {
 
-      return html`<div>${this.label}: ${this.count}</div>`;
+      return html`
+        <div>
+          <value-counter label="Cookies"  count= "3"></value-counter>
+          <value-counter label="Milk"  count= "2"></value-counter>
+          <value-counter label="Tea"  count= "10"></value-counter>
+          
+
+          </value-counter>
+        </div>
+        `;
     }
-  }
+  
+
+
+customElements.define("tmin-app", Component);
+
 
 // class JozuaCustom extends HTMLElement {
 //   inner = this.attachShadow({ mode: "closed" });
@@ -44,4 +56,3 @@ import {
 //     button.addEventListener("click", handler);
 //   }
 // }
-customElements.define("jozua-custom", JozuaCustom);
